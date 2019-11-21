@@ -82,3 +82,11 @@ Epoch 00020: LearningRateScheduler setting learning rate to 0.000424869.
 <keras.callbacks.History at 0x7f5e5927e208>
 
 [0.017315888519212605, 0.9947]
+
+## Strategy
+1. I removed the bias in every conv2d layer by setting use_bias argument to false
+2. I removed the last conv2d layer with kernel size 4x4, changed the channel size of previous conv2d layer from 16 to 10 and add GAP layer in place of conv2d 4x4 layer. Rest everything was kept same.
+
+
+End
+
